@@ -1,0 +1,128 @@
+body{
+	background-image: url('/images/gabriel-santiago-19756-unsplash-min2.JPG');
+	background-size: cover;
+	margin: 0;
+	font-family: 'Work Sans',sans-serif;
+	font-weight: 300;
+}
+
+.header
+{
+	background: #55d6aa;
+}
+.content{
+	content: ' ';
+}
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.tm-container{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+
+
+nav{
+	float: right;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+nav li{
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+
+	position: relative;
+
+}
+nav a{
+	color: #444;
+	text-decoration: none;
+	font-size: 19px;
+}
+nav a:hover{
+	color: #000;
+}
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #444;
+
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: ease-out 250ms;
+}
+
+nav a:hover::before{
+	width: 100%;
+}
+
+/* 2nd part */
+
+.neon{
+font-family: 'Comfortaa', cursive;
+position: absolute;
+top: 44%;
+left: 30%;
+transform: translate(-25%,-25%);
+margin: 0;
+padding: 0 20px;
+font-size: 2.50em;
+color: #fff;
+text-shadow: 0 0 20px #ff005b;
+}
+
+.neon:after
+{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: #ff005b;
+	filter: blur(15px);
+}
+
+.neon:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fe3a80;
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);
+}
+
+.link{
+	text-decoration: none;
+}
+.work{
+	text-decoration: none;
+margin-top: 30%;
+margin-left: 14.5%;
+font-family: 'Comfortaa', cursive;
+color: #31e8c9;
+font-size: 35px;
+}
+
+.tm-footer{
+	background: #55d6aa;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10.02%;
+
+}

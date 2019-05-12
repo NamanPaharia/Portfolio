@@ -1,0 +1,102 @@
+body{
+	background-image: url('/images/diego-passadori-659871-unsplash-min.JPG');
+	background-size: cover;
+	margin: 0;
+	font-family: 'Work Sans',sans-serif;
+	font-weight: 300;
+}
+
+.header
+{
+	background: #55d6aa;
+}
+.content{
+	content: ' ';
+}
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.tm-container{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+
+
+nav{
+	float: right;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+nav li{
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+
+	position: relative;
+
+}
+nav a{
+	color: #444;
+	text-decoration: none;
+	font-size: 19px;
+}
+nav a:hover{
+	color: #000;
+}
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #444;
+
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: ease-out 250ms;
+}
+
+nav a:hover::before{
+	width: 100%;
+}
+
+.art{
+	margin-top: 13%;
+	margin-left: 20%;
+	color: #f02e47;
+	font-size: 40px;
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+.info{
+	padding-top: 10px;
+	font-size: 40px;
+	color: #31e8c9;
+	font-family: 'Comfortaa', cursive
+
+}
+
+.link1a{
+	text-decoration: none;
+	color: #31e8c9;
+}
+.link1b{
+	text-decoration: none;
+	color: #31e8c9;
+}
+
+.tm-footer{
+	background: #55d6aa;
+	text-align: center;
+	padding: 10px;
+	margin-top: 14.80%;
+
+}
